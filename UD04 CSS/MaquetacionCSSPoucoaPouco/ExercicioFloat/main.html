@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio práctico de elementos flotantes</title>
+    <style>
+      nav {
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
+      }
+      nav > p {
+        margin-right: 100px;
+      }
+      nav > p:first-of-type {
+        margin-left: 20px;
+      }
+      #content {
+        float: right;
+        width: 85%;
+      }
+      #figure {
+        float: left;
+        clear: right;
+      }
+      figure {
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 33%;
+        text-align: center;
+        margin: 0;
+        margin-top: 25px;
+        float: left;
+      }
+      img {
+        width: 75%;
+      }
+      #text > p {
+        float: left;
+        width: 33%;
+      }
+      #lateral {
+        float: left;
+        height: 750px;
+        padding-right: 60px;
+        padding-left: 10px;
+        margin-top: 50px;
+        background-color: black;
+        color: white;
+      }
+      footer {
+        clear: both;
+        text-align: center;
+        background-color: grey;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <p>Inicio</p>
+      <p>Produtos</p>
+      <p>Sobre nos</p>
+      <p>Contacta</p>
+    </nav>
+    <div id="content">
+      <div id="figure">
+        <figure>
+          <img src="logo.jpg" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            repudiandae tempora, dicta amet nesciunt voluptatem quam iste cumque
+            at deserunt accusantium assumenda eaque ipsa repellat accusamus quo
+            sapiente nihil aliquid.
+          </p>
+        </figure>
+        <figure>
+          <img src="logo.jpg" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            repudiandae tempora, dicta amet nesciunt voluptatem quam iste cumque
+            at deserunt accusantium assumenda eaque ipsa repellat accusamus quo
+            sapiente nihil aliquid.
+          </p>
+        </figure>
+        <figure>
+          <img src="logo.jpg" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            repudiandae tempora, dicta amet nesciunt voluptatem quam iste cumque
+            at deserunt accusantium assumenda eaque ipsa repellat accusamus quo
+            sapiente nihil aliquid.
+          </p>
+        </figure>
+      </div>
+      <div id="text">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+          repudiandae tempora, dicta amet nesciunt voluptatem quam iste cumque
+          at deserunt accusantium assumenda eaque ipsa repellat accusamus quo
+          sapiente nihil aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+          repudiandae tempora, dicta amet nesciunt voluptatem quam iste cumque
+          at deserunt accusantium assumenda eaque ipsa repellat accutext-align:
+          center;samus quo sapiente nihil aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+          repudiandae tempora, dicta amet nesciunt voluptatem quam iste cumque
+          at deserunt accusantium assumenda eaque ipsa repellat accusamus quo
+          sapiente nihil aliquid.
+        </p>
+      </div>
+    </div>
+    <div id="lateral">
+      <p>Inicio</p>
+      <p>Produtos</p>
+      <p>Sobre nos</p>
+      <p>Contacta</p>
+    </div>
+    <footer>Elementos Folatntes do MDN <a href="DIW-DAW">DIW-DAW</a></footer>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form class="row m-3 g-3 needs-validation">
+      <div class="col-12 mb-2">
+        <div class="input-group">
+          <div class="input-group-text">Nome completo</div>
+          <input
+            type="text"
+            class="form-control"
+            id="nome"
+            placeholder="Nome" required
+          />
+          <input
+            type="text"
+            class="form-control"
+            id="apelidos"
+            placeholder="Apelidos" required
+          />
+        </div>
+      </div>
+      <div class="col-12 mb-2">
+        <div class="input-group">
+          <div class="input-group-text">@</div>
+          <input
+            type="text"
+            class="form-control"
+            id="1"
+            placeholder="Correo electrónico"
+          />
+        </div>
+      </div>
+      <div class="col-4">
+        <label class="form-label" for="cp">Código postal</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="cp" placeholder="CP" />
+        </div>
+      </div>
+      <div class="col-4">
+        <label class="form-label" for="cidade">Cidade</label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="cidade"
+            placeholder="Cidade"
+          />
+        </div>
+      </div>
+      <div class="col-4">
+        <label class="form-label" for="provincia">Provincia</label>
+        <div class="input-group">
+          <select name="provincia" id="provincia" class="form-select">
+            <option value="1">Escolle unha...</option>
+            <option value="2">A Coruña</option>
+            <option value="3">Lugo</option>
+            <option value="4">Ourense</option>
+            <option value="5">Pontevedra</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12">
+        <label class="form-label" for="comentarios">Comentarios</label>
+        <div class="input-group">
+          <textarea
+            class="form-control"
+            name="comentarios"
+            id="comentarios"
+            placeholder="comentarios"
+          ></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check form-check-inline ms-2 text-success">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="primeira-opcion"
+          />
+          <label class="form-check-label" for="primeira-opcion">
+            Primeira opción
+          </label>
+          <div class="form-check form-check-inline ms-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="segunda-opcion"
+            />
+            <label class="form-check-label" for="segunda-opcion">
+              Segunda opción
+            </label>
+          </div>
+          <div class="form-check form-check-inline ms-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="terceira-opcion"
+            />
+            <label class="form-check-label" for="terceira-opcion">
+              Terceira opción
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <label class="form-label" for="cp">Selecciona elemento da lista:</label>
+        <div class="input-group">
+          <select name="provincia" id="provincia" class="form-select" multiple>
+            <option value="1" selected>Selección múltiple...</option>
+            <option value="2">Opción 1</option>
+            <option value="3">Opción 2</option>
+            <option value="4">Opción 3</option>
+
+          </select>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary text-white mt-2" >Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

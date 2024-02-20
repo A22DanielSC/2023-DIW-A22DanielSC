@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio formularios</title>
+    <style>
+      #datos_persoais {
+        background-color: grey;
+      }
+      #forma_acceso {
+        background-color: rgb(241, 194, 156);
+      }
+      #documentos_xurados {
+        background-color: rgb(182, 126, 126);
+      }
+      li {
+        list-style-type: none;
+      }
+      legend {
+        background-color: white;
+        border: 1px solid;
+      }
+      #submit {
+        margin-top: 30px;
+      }
+      th {
+        text-align: left;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FOLLA DE INSCRICIÓN</h1>
+    <h1>NOS CICLOS FORMATIVOS DE GRAO SUPERIOR</h1>
+    <form method="post" action="whatever.php">
+      <fieldset id="datos_persoais">
+        <legend>Datos persoais</legend>
+
+        <table>
+          <thead>
+            <tr>
+              <th><label name="nome">Nome:</label></th>
+              <th><label name="apelidos">Apelidos:</label></th>
+              <th><label name="dni">DNI:</label></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" name="nome" /></td>
+              <td><input type="text" name="apelidos" /></td>
+              <td><input type="text" name="dni" /></td>
+            </tr>
+            <tr>
+              <th><label name="localidade">Localidade de Nacemento:</label></th>
+              <th><label name="provincia">Provincia:</label></th>
+              <th><label name="nacemento">Data de Nacemento:</label></th>
+            </tr>
+            <tr>
+              <td><input type="text" name="localidade" /></td>
+              <td>
+                <select name="provincia">
+                  <option value="coruna">A Coruña</option>
+                  <option value="vigo">Vigo</option>
+                  <option value="ourense">Ourense</option>
+                  <option value="pontevedra">Pontevedra</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="nacemento" placeholder="DD/MM/YYYY" />
+              </td>
+            </tr>
+            <tr>
+              <th id="twoColum" colspan="2">
+                <label name="enderezo" width="100%">Enderezo:</label>
+              </th>
+              <th><label name="codigopostal">Codigo Postal:</label></th>
+            </tr>
+            <tr>
+              <td id="twoColum" colspan="2">
+                <input type="text" name="enderezo" size="50px" />
+              </td>
+              <td><input type="text" name="codigopostal" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <fieldset id="forma_acceso">
+        <legend>Forma de Acceso</legend>
+        <ul>
+          <li>
+            <input type="radio" name="acceso" />
+            <label name="acceso">Directo</label>
+            <ul>
+              <li>
+                <input type="radio" name="directo" />
+                <label name="directo">Bacharelato Log Modalidade</label>
+                <input type="text" name="bach" />
+              </li>
+              <li>
+                <input type="radio" name="directo" />
+                <label name="directo">Experimental Modalidade</label>
+              </li>
+              <li>
+                <input type="radio" name="directo" />
+                <label name="directo">Bacharelato Log Modalidade</label>
+                <input type="text" name="bach" />
+              </li>
+              <li>
+                <input type="radio" name="directo" />
+                <label name="directo">FP2</label>
+              </li>
+              <li>
+                <input type="radio" name="directo" />
+                <label name="directo">Outros (especifique)</label>
+                <input type="text" name="outros" />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input type="radio" name="acceso" />
+            <label name="acceso">Proba libre</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset id="documentos_xurados">
+        <legend name="documentos_xurados">Documentos Xurados</legend>
+        <table>
+          <tbody>
+            <tr>
+              <th id="dniTh">
+                <input type="checkbox" name="dniCopia" /><label for="dniCopia"
+                  >Fotocopia DNI</label
+                >
+              </th>
+              <th>
+                <input type="checkbox" name="certAcademico" /><label
+                  for="certAcademico"
+                  >Certificado Academico</label
+                >
+              </th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <input type="checkbox" name="outrosDocumentos" /><label
+                  for="outrosDocumentos"
+                  >Outros documentos (especifique)</label
+                ><input type="text" name="outrosDocumentosText" />
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <input id="submit" type="submit" value="Enviar Solicitude" />
+    </form>
+  </body>
+</html>

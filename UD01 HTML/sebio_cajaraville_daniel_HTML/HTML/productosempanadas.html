@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farangullas na línea - Empanadas</title>
+    <style>
+      #Fondo-Portada {
+        width: 100%;
+      }
+      header {
+        background-color: #ebebeb;
+        padding: 25px;
+        width: 100%;
+        margin: -15px;
+      }
+      table {
+        width: 100%;
+        text-align: center;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        background: rgb(224, 225, 230);
+      }
+      footer {
+        background-color: #ebebeb;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        margin: -15px;
+      }
+      a {
+        font-weight: 400;
+        font-style: normal;
+        color: #322203;
+        text-decoration: none;
+      }
+      #logo {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 180%;
+      }
+      #idFooter {
+        max-width: 30%;
+        margin-left: 35%;
+      }
+      tfoot > tr > td > a {
+        font-size: 80%;
+      }
+      #productos {
+        margin-left: 5%;
+        max-width: 75%;
+        margin-top: 50px;
+        padding: 0;
+        margin-bottom: 50px;
+      }
+      #imageProducts {
+        margin-left: 200px;
+      }
+      #secciones {
+        font-size: 150%;
+        text-align: center;
+      }
+      #nombreProducto {
+        font-size: 130%;
+        text-align: left;
+      }
+      #descripcionProducto {
+        text-align: left;
+      }
+      #nuestrosProductos {
+        font-size: 400%;
+      }
+      #productos > tbody > tr > td {
+        width: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <table id="cabecera">
+        <thead>
+          <tr>
+            <th>
+              <a href="productos.html" target="_self" type="text/html">
+                PRODUCTOS
+              </a>
+            </th>
+            <th></th>
+            <th>
+              <a href="horarios.html" target="_self" type="text/html">
+                HORARIOS
+              </a>
+            </th>
+            <th></th>
+            <th>
+              <a id="logo" href="main.html" target="_self" type="text/html">
+                FARANGULLAS <br />NA LÍNEA
+              </a>
+            </th>
+            <th>
+              <a href="contactos.html" target="_self" type="text/html">
+                CONTACTOS
+              </a>
+            </th>
+            <th>
+              <a
+                href="../HTML portugues/pagina_portugues.html"
+                target="_self"
+                type="text/html"
+              >
+                ESP/POR
+              </a>
+            </th>
+          </tr>
+        </thead>
+      </table>
+    </header>
+
+    <table id="productos">
+      <tbody>
+        <tr>
+          <td id="nuestrosProductos" colspan="3">NUESTROS PRODUCTOS</td>
+          <td rowspan="9">
+            <img id="imageProducts" src="Imagenes/foto_productos.png" />
+          </td>
+        </tr>
+        <tr>
+          <td id="secciones">PANADERIA</td>
+          <td id="secciones">PASTELERIA</td>
+          <td id="secciones">EMPANADAS</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="productospanaderia.html" target="_self" type="img"
+              ><img src="Imagenes/bread.png" width="100px"
+            /></a>
+          </td>
+          <td>
+            <a href="productospasteleria.html" target="_self" type="img"
+              ><img src="Imagenes/croissant-removebg-preview.png" width="100px"
+            /></a>
+          </td>
+          <td>
+            <a href="productosempanadas.html" target="_self" type="img">
+              <img src="Imagenes/empanada.png" width="100px"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <img src="Imagenes/empanadaatun.jpg" width="100px" />
+          </td>
+          <td id="nombreProducto" colspan="2">Empanada de atún</td>
+        </tr>
+        <tr>
+          <td id="descripcionProducto" colspan="2">
+            Agua, Aceite de girasol, Aceite Vegetal, Ácido Cítrico E330, Almidón
+            Acetilado E1420, Atún, Azúcar, Berenjena, Butilhidroxianisol (BHA)
+            E320, Butilhidroxitolueno (BHT) E321, Carragenanos E407, Cebolla,
+            Goma Garrofín (Algarrobo) E410.
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <img src="Imagenes/empanadacarne.jpg" width="100px" />
+          </td>
+          <td id="nombreProducto" colspan="2">Empanada de carne</td>
+        </tr>
+        <tr>
+          <td id="descripcionProducto" colspan="2">
+            Masa: harina de TRIGO, masa madre (harina de TRIGO, agua), agua,
+            margarina [grasa de coco, agua, aceite de girasol, emulgente (E471),
+            sal, acidulante (ácido cítrico), conservador (E200), aroma], HUEVOS,
+            manteca de cerdo, aceite de oliva, sal, azúcar, vino blanco,
+            mejorante (TRIGO).
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <img src="Imagenes/empanadamejillones.jpg" width="100px" />
+          </td>
+          <td id="nombreProducto" colspan="2">Empanada de mejillones</td>
+        </tr>
+        <tr>
+          <td id="descripcionProducto" colspan="2">
+            Harina de TRIGO, agua, ,levadura, sal, mejorantes panarios(harina de
+            CENTENO, leguminosas, azucares(azúcar, dextrosa) grasa vegetal
+            (palma y colza), derivados LÁCTEOS, emulsionantes: e-322, e-472e
+            e-471,e-481 ,GLUTEN, harina de SOJA, regulador de pH e-341i.
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <img src="Imagenes/empanadaxoubas.jpeg" width="100px" />
+          </td>
+          <td id="nombreProducto" colspan="2">Empanada de xoubas</td>
+        </tr>
+        <tr>
+          <td id="descripcionProducto" colspan="2">
+            Harina de TRIGO, agua, masa madre inactiva de TRIGO (agua y harina
+            de TRIGO fermentada), sal, levadura, enzimas, agente del tratamiento
+            de la harina: E300, emulgente: E472e.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <table id="idFooter" name="footer">
+        <tfoot>
+          <tr>
+            <td>
+              <a href="avisoLegal.html" target="_self" type="text/html">
+                Aviso Legal
+              </a>
+            </td>
+            <td>
+              <a href="politicaPrivacidad.html" target="_self" type="text/html">
+                Política Privacidad
+              </a>
+            </td>
+            <td>
+              <a href="politicaCookies.html" target="_self" type="text/html">
+                Política Cookies
+              </a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </footer>
+  </body>
+</html>

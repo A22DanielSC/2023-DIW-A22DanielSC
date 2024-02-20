@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio práctico con táboas</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 2px solid black;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th colspan="3">
+            <img
+              alt="Ipod 120"
+              src="/Exercitio_Taboa/120_ipod.png"
+              style="width: 100px"
+            />
+          </th>
+          <th colspan="2">
+            <img
+              alt="Ipod 100"
+              src="/Exercitio_Taboa/100_ipod.png"
+              style="width: 100px"
+            />
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Capacidade</th>
+          <td>2XB</td>
+          <td>4XB</td>
+          <td>8XB</td>
+          <td>32XB</td>
+          <td>2XB</td>
+        </tr>
+        <tr>
+          <th>Cores</th>
+          <th>Blanco</th>
+          <td>
+            <ul>
+              <li>Negro</li>
+              <li>Rosa</li>
+              <li>Dourado</li>
+            </ul>
+          </td>
+          <th>Negro</th>
+          <td colspan="2">
+            <ul>
+              <li>Negro</li>
+              <li>Blanco</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Pantalla</th>
+          <th colspan="3">3 pulgadas</th>
+          <th colspan="2">7 pulgadas</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Tiempo de Carga</th>
+          <th colspan="3" rowspan="2">1 hora</th>
+          <th colspan="2">5 horas</th>
+        </tr>
+        <tr>
+          <th colspan="2">30 minutos para 75%</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

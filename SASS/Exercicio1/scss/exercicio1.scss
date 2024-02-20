@@ -1,0 +1,55 @@
+//Asignando cor fondo de nav e cor de texto de botón de inicio
+$navColor: #997090;
+$colorInicio: white;
+//Estilo ao contedor xeral quitando o marxe a body para que non queden espazos en branco
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 0;
+  nav {
+    width: 100%;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 2%;
+    margin: 1%;
+    img {
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+}
+
+//Cambiando a lista para que se mostre na mesma línea
+ul {
+  display: flex;
+  gap: 5%;
+  list-style: none;
+  background-color: $navColor;
+  padding: 20px;
+  margin: 0;
+}
+//Elementos anidados para o menú
+ul {
+  //Cambiando cada elemento da lista para que apareza cursor pointer
+  li {
+    cursor: pointer;
+    //Cambiando o elemento da lista para que ao tera clase active cambie a branco
+    &.active {
+      color: $colorInicio;
+    }
+  }
+}
