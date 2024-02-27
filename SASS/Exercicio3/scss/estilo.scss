@@ -1,0 +1,59 @@
+$buttonType: (
+  error: red,
+  warning: yellow,
+  accepted: green,
+  normal: blue,
+);
+.btn {
+  display: inline-block;
+}
+@each $button, $color in $buttonType {
+  .btn-#{$button} {
+    background-color: $color;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+
+@function corTaboa($row){
+    @if $row % 2 == 0{
+        @return lightgrey;
+    }@else{
+        @return grey;
+    }
+}
+table{
+    border-collapse: collapse;
+    td, th{
+            border: 2px solid black;
+            padding: 20px;
+    }
+    tbody {
+            @for $i from 1 to 5 {
+            td:nth-of-type(#{$i}){
+                background-color: corTaboa($i);
+            }
+        }
+    }    
+}
+
+@function colSize($number){
+    $maxSize: 8;
+    @return calc($number * 100 / $maxSize);
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @for $i from 1 to 9 {
+        .col-#{$i}{
+            width: colSize($i)+ #{"%"};
+            border: 1px solid black;
+            height: 20vh;
+        }
+    }
+}
